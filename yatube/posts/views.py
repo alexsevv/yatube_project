@@ -6,6 +6,6 @@ def index(request):
 
 
 def group_posts(request, slug):
-    return HttpResponse(f"""здесь будут определенной группы. А это имя
+    return HttpResponse(f"""здесь будет название определенной группы. А это имя
                         текущей группы: {slug}"""
                         )
