@@ -1,6 +1,17 @@
 <!-- templates/posts/index.html -->
 {% extends 'base.html' %}
 {% block content %}
-  {{ text }}
-  <p><a href="group_list.html">все записи группы</a></p>
-{% endblock %} 
+<main> 
+  <!-- класс py-5 создает отступы сверху и снизу блока -->
+  <div class="container py-5">     
+    <h1>Последние обновления на сайте</h1>
+    <article>
+      {{ text }}
+      <p><a href="group_list.html">все записи группы</a></p>
+    </article>
+    <!-- под последним постом нет линии -->
+  </div>  
+</main>
+{% endblock %}
+
+
