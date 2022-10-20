@@ -1,5 +1,6 @@
 <!-- templates/posts/index.html -->
 {% extends 'base.html' %}
+{% block title %}Последние обновления на сайте{% endblock %}
 {% block content %}
 <main> 
   <!-- класс py-5 создает отступы сверху и снизу блока -->
@@ -17,7 +18,7 @@
         </ul>
         <p>{{ post.text }}</p>    
         {% if post.group %}
-          <a href="{% url 'posts:group_slug' post.group.slug %}">
+          <a href="{% url 'posts:group_list' post.group.slug %}">
             Все записи группы: &#171;{{ post.group.title }}&#187;
           </a>
         {% endif %}
