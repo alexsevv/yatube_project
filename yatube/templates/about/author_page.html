@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Об авторе проекта{% endblock %}
+{% block content %}
+{% load static %}
+
+<div class="container py-5">     
+  <h1>Привет, я автор</h1>
+    <article>
+      <p>Привет, меня зовут Матияка Александр Викторович.</p> 
+      <p>Я автор данного учебного сайта, скину немного ссылок на свои действующие аккаунты,
+         чтобы немного описать себя.</p>
+      <ol>
+        <li><a href="https://github.com/alexsevv" target="_blank">Github<a></li>
+        <li><a href="https://alexsevv.github.io/cv/" target="_blank">Резюме на Github<a></li>
+        <li><a href="https://vk.com/matiyaka_alex" target="_blank">Вконтакте<a></li>
+        <li><a href="https://instagram.com/ziwood92" target="_blank">Instagram<a></li>
+      </ol>
+      <h2>Мое рабочее место</h2>
+      <p><img src="{% static 'img/work_pc.jpg' %}" width="600"></p>
+      <h2>Мое Хобби (<a href="https://www.youtube.com/watch?v=Lzdl5maOhu8" target="_blank">Кумико<a></a>)</h2>
+      <p>
+        <img src="{% static 'img/kumiko1.jpg' %}" width="600">
+        <img src="{% static 'img/kumiko2.jpg' %}" width="600">
+      </p>
+      <p>Остальные фото в <a href="https://instagram.com/ziwood92" target="_blank">Instagram<a>. Видео не мое :)</p>
+      <p>p.s.:"причесывать" страничку буду позже, после завершения спринта</p>
+    </article>
+</div> 
+{% endblock %}
